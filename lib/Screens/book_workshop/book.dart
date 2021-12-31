@@ -12,7 +12,7 @@ class Booking extends State<BookingPage> {
      Future getPosts() async {
      var firestore = FirebaseFirestore.instance;
 
-     QuerySnapshot qn = await firestore.collection('booking').get();
+     QuerySnapshot qn = await firestore.collection('workshop').get();
      return qn.docs;
    }
 
